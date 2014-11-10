@@ -6,6 +6,25 @@ world. Below is an exhaustive list of the type of projects included:
 * C (cproj)
 * Latex (texproj)
 
+Installation 
+------------
+There is no formal installation for these skeleton files. You can put them
+wherever you wish (preferably somewhere sensable like ~/src/skel/). To make you
+life a bit easier add this alias to your shell's profile file (~/.bashrc for
+most Unix based systems): 
+
+	$SKELPATH="<path to skeleton directories here>" #e.g: ~/src/skel/ 
+	alias skel="cp -pr $SKELPATH/"
+
+Run:
+	. ~/.bashrc (the equivalent)
+
+To update the alias to your shell. Now you can run:
+
+	skel cproj ./newCProjectDir/
+
+To create a new c project in the `newCProjectDir` directory.
+
 Project Build Systems 
 ---------------------
 Most of the projects included default to using make as the build system. This is
