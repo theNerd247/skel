@@ -23,7 +23,8 @@ PDFOPTS=-output-directory $(PDFOUTDIR)
 #-shell-escape 
 #-- END FLAGS }}} -------------------------------------------------------
 #-- TARGETS {{{ -----------------------------------------------------------
-PDFTEXTARGET=$(TEXDIR)/main.tex
+TEXMAIN=main
+PDFTEXTARGET=$(TEXDIR)/$(TEXMAIN).tex
 PDFTARGET=$(PREFIX)/$(PROJECT).pdf
 #-- END TARGETS }}} -------------------------------------------------------
 
@@ -41,4 +42,4 @@ pdf: setup
 	cd $(TEXDIR);\
 	export $(PDFENV);\
 	pdflatex $(PDFOPTS) $(PDFTEXTARGET)
-	mv $(PDFOUTDIR)/main.pdf $(PDFTARGET)
+	mv $(PDFOUTDIR)/$(TEXMAIN).pdf $(PDFTARGET)
