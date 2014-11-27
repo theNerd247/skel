@@ -9,23 +9,29 @@ world. Below is an exhaustive list of the type of projects included:
 
 Installation 
 ------------
-There is no formal installation for these skeleton files. You can put them
-wherever you wish (preferably somewhere sensable like ~/src/skel/). To make you
-life a bit easier add this alias to your shell's profile file (~/.bashrc for
-most Unix based systems): 
+
+There is no formal installation for these skeleton files. You can put
+them wherever you wish (preferably somewhere sensable like ~/src/skel/
+or ~/.skel). Included is a shell script that you should use to create a
+new project somewhere. Run:  
+
+	$ skel.sh 
+
+To see the usage of this script. To make you life a bit easier add this
+alias to your shell's profile file (~/.bashrc for most Unix based
+systems): 
 
 	(in ~/.bashrc)
-	$SKELPATH="<path to skeleton directories here>" #e.g: ~/src/skel/ 
-	alias skel="cp -pr $SKELPATH/"
+	export SKELPATH="<path to skeleton directories here>"
+	alias skel="<path to skel.sh>"
 
-Run:
-	$ . ~/.bashrc (the equivalent)
+Update the alias to your shell:
 
-To update the alias to your shell. Now you can run:
+	$ . ~/.bashrc (or the equivalent)
+
+Example(Creates a new c project in the `newCProjectDir` directory): 
 
 	$ skel cproj ./newCProjectDir/
-
-To create a new c project in the `newCProjectDir` directory.
 
 Project Build Systems 
 ---------------------
