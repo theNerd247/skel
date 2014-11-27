@@ -5,6 +5,7 @@ world. Below is an exhaustive list of the type of projects included:
 
 * C (cproj)
 * Latex (texproj)
+* data (octave, gnuplot)
 
 Installation 
 ------------
@@ -40,3 +41,5 @@ known list of dependencies (assume the lastest version for each):
 
 * gnu make
 * gcc 
+* gnuplot 
+* octave
