@@ -2,26 +2,41 @@
 \usepackage{labreport}
 
 \begin{document}
-	\title{<+Report Title+>}
-	\author{<+Authors/Other Lab Info+>}
+
+	\title{<+Title+>}
+	\author{Noah Harvey}
 	% Date is automagically included (see Latex documentation)
 	\maketitle
 
 	\begin{abstract}
+
 	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
 	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
 	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
 	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
 	\end{abstract}
 
 	\tableofcontents
 	\listoftables
 	\listoffigures
 
+	\pagebreak
 	% other sections of the labreport go here
 	\subfile{intro}
 	\subfile{methods}
-	\subfile{results}
-	\subfile{conclusion}
-	%\subfile{graphs}
+
+	%\pagebreak
+	% appendix of the document go here
+	%\subfile{appendixA}
+	%\pagebreak
+
+	\begin{thebibliography}{9}
+		\bibitem{<+ParenCite+>}
+			<+First Last,+>
+			<+ (Date)+>
+			<+\emph{<+Title+>}+>
+			<+Publish+>
+	\end{thebibliography}
+
 \end{document}
