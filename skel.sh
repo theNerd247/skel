@@ -1,8 +1,18 @@
 #!/bin/sh
 
+srcSkell()
+{
+# TODO: add bash autocomplete stuffs
+  alias skel=""
+}
+
 if [[ -z $1 || -z $2 ]]; then 
 	echo "USAGE: skel <projname> <new project path>";
 	exit;
+fi
+
+if [[ $1 == "autocomplete" ]]; then
+	srcSkell
 fi
 
 if [[ -z $SKELDIR ]]; then
