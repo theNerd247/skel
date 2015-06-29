@@ -21,10 +21,6 @@ fi
 
 cppath=$SKELDIR/$1
 
-if [[ ! -d $cppath ]]; then
-	echo "error $cppath: path not found"
-fi
-
 if [[ ! -d $2 ]]; then
 	mkdir -p $2
 fi
